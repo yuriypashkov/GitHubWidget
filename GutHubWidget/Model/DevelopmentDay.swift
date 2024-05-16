@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct DevelopmentDay {
+struct DevelopmentDay: Identifiable {
+    var id = UUID().uuidString
+    
     let date: Date
     let dataLevel: Int
 }

@@ -16,9 +16,47 @@
 		21FE09992BF4BDCD00D47104 /* ContributionsGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE09982BF4BDCD00D47104 /* ContributionsGraphView.swift */; };
 		21FE099C2BF4BFC500D47104 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE099B2BF4BFC500D47104 /* Extension+Color.swift */; };
 		21FE099F2BF4C2A300D47104 /* ContributionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE099E2BF4C2A300D47104 /* ContributionsViewModel.swift */; };
-		21FE09A12BF4C52C00D47104 /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE09A02BF4C52C00D47104 /* Extension+Date.swift */; };
+		21FE09A12BF4C52C00D47104 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE09A02BF4C52C00D47104 /* String+Date.swift */; };
 		21FE09A32BF4C5F000D47104 /* GitHubParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE09A22BF4C5F000D47104 /* GitHubParser.swift */; };
+		21FE09AD2BF634B100D47104 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FE09AC2BF634B100D47104 /* WidgetKit.framework */; };
+		21FE09AF2BF634B100D47104 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FE09AE2BF634B100D47104 /* SwiftUI.framework */; };
+		21FE09B22BF634B100D47104 /* GitHub_WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE09B12BF634B100D47104 /* GitHub_WidgetBundle.swift */; };
+		21FE09B42BF634B100D47104 /* GitHub_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE09B32BF634B100D47104 /* GitHub_Widget.swift */; };
+		21FE09B82BF634B300D47104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21FE09B72BF634B300D47104 /* Assets.xcassets */; };
+		21FE09BC2BF634B300D47104 /* GitHub WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 21FE09AA2BF634B100D47104 /* GitHub WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		21FE09C12BF634F700D47104 /* DevelopmentDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE09962BF4BD5800D47104 /* DevelopmentDay.swift */; };
+		21FE09C22BF6351C00D47104 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE09A02BF4C52C00D47104 /* String+Date.swift */; };
+		21FE09C32BF6351C00D47104 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE099B2BF4BFC500D47104 /* Extension+Color.swift */; };
+		21FE09C42BF6351C00D47104 /* GitHubParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE09A22BF4C5F000D47104 /* GitHubParser.swift */; };
+		21FE09C52BF6352C00D47104 /* ContributionsGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE09982BF4BDCD00D47104 /* ContributionsGraphView.swift */; };
+		21FE09C72BF638B300D47104 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 21FE09C62BF638B300D47104 /* SwiftSoup */; };
+		21FE09C92BF6396D00D47104 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE09C82BF6396D00D47104 /* AppIntent.swift */; };
+		21FE09CA2BF6396D00D47104 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE09C82BF6396D00D47104 /* AppIntent.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21FE09BA2BF634B300D47104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21FE09782BF4BC7B00D47104 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21FE09A92BF634B100D47104;
+			remoteInfo = "GitHub WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		21FE09C02BF634B300D47104 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				21FE09BC2BF634B300D47104 /* GitHub WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		21FE09802BF4BC7B00D47104 /* GutHubWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GutHubWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,8 +68,16 @@
 		21FE09982BF4BDCD00D47104 /* ContributionsGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsGraphView.swift; sourceTree = "<group>"; };
 		21FE099B2BF4BFC500D47104 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		21FE099E2BF4C2A300D47104 /* ContributionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsViewModel.swift; sourceTree = "<group>"; };
-		21FE09A02BF4C52C00D47104 /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
+		21FE09A02BF4C52C00D47104 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		21FE09A22BF4C5F000D47104 /* GitHubParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubParser.swift; sourceTree = "<group>"; };
+		21FE09AA2BF634B100D47104 /* GitHub WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GitHub WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21FE09AC2BF634B100D47104 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		21FE09AE2BF634B100D47104 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		21FE09B12BF634B100D47104 /* GitHub_WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHub_WidgetBundle.swift; sourceTree = "<group>"; };
+		21FE09B32BF634B100D47104 /* GitHub_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHub_Widget.swift; sourceTree = "<group>"; };
+		21FE09B72BF634B300D47104 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21FE09B92BF634B300D47104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21FE09C82BF6396D00D47104 /* AppIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +89,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		21FE09A72BF634B100D47104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FE09AF2BF634B100D47104 /* SwiftUI.framework in Frameworks */,
+				21FE09AD2BF634B100D47104 /* WidgetKit.framework in Frameworks */,
+				21FE09C72BF638B300D47104 /* SwiftSoup in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -50,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				21FE09822BF4BC7B00D47104 /* GutHubWidget */,
+				21FE09B02BF634B100D47104 /* GitHub Widget */,
+				21FE09AB2BF634B100D47104 /* Frameworks */,
 				21FE09812BF4BC7B00D47104 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				21FE09802BF4BC7B00D47104 /* GutHubWidget.app */,
+				21FE09AA2BF634B100D47104 /* GitHub WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				21FE099B2BF4BFC500D47104 /* Extension+Color.swift */,
-				21FE09A02BF4C52C00D47104 /* Extension+Date.swift */,
+				21FE09A02BF4C52C00D47104 /* String+Date.swift */,
 				21FE09A22BF4C5F000D47104 /* GitHubParser.swift */,
 			);
 			path = SupportFiles;
@@ -119,6 +178,27 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		21FE09AB2BF634B100D47104 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21FE09AC2BF634B100D47104 /* WidgetKit.framework */,
+				21FE09AE2BF634B100D47104 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21FE09B02BF634B100D47104 /* GitHub Widget */ = {
+			isa = PBXGroup;
+			children = (
+				21FE09C82BF6396D00D47104 /* AppIntent.swift */,
+				21FE09B12BF634B100D47104 /* GitHub_WidgetBundle.swift */,
+				21FE09B32BF634B100D47104 /* GitHub_Widget.swift */,
+				21FE09B72BF634B300D47104 /* Assets.xcassets */,
+				21FE09B92BF634B300D47104 /* Info.plist */,
+			);
+			path = "GitHub Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +209,12 @@
 				21FE097C2BF4BC7B00D47104 /* Sources */,
 				21FE097D2BF4BC7B00D47104 /* Frameworks */,
 				21FE097E2BF4BC7B00D47104 /* Resources */,
+				21FE09C02BF634B300D47104 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				21FE09BB2BF634B300D47104 /* PBXTargetDependency */,
 			);
 			name = GutHubWidget;
 			packageProductDependencies = (
@@ -141,6 +223,26 @@
 			productName = GutHubWidget;
 			productReference = 21FE09802BF4BC7B00D47104 /* GutHubWidget.app */;
 			productType = "com.apple.product-type.application";
+		};
+		21FE09A92BF634B100D47104 /* GitHub WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21FE09BD2BF634B300D47104 /* Build configuration list for PBXNativeTarget "GitHub WidgetExtension" */;
+			buildPhases = (
+				21FE09A62BF634B100D47104 /* Sources */,
+				21FE09A72BF634B100D47104 /* Frameworks */,
+				21FE09A82BF634B100D47104 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GitHub WidgetExtension";
+			packageProductDependencies = (
+				21FE09C62BF638B300D47104 /* SwiftSoup */,
+			);
+			productName = "GitHub WidgetExtension";
+			productReference = 21FE09AA2BF634B100D47104 /* GitHub WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -153,6 +255,9 @@
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					21FE097F2BF4BC7B00D47104 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					21FE09A92BF634B100D47104 = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
@@ -174,6 +279,7 @@
 			projectRoot = "";
 			targets = (
 				21FE097F2BF4BC7B00D47104 /* GutHubWidget */,
+				21FE09A92BF634B100D47104 /* GitHub WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -188,6 +294,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		21FE09A82BF634B100D47104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FE09B82BF634B300D47104 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -197,7 +311,8 @@
 			files = (
 				21FE099F2BF4C2A300D47104 /* ContributionsViewModel.swift in Sources */,
 				21FE09862BF4BC7B00D47104 /* ContentView.swift in Sources */,
-				21FE09A12BF4C52C00D47104 /* Extension+Date.swift in Sources */,
+				21FE09C92BF6396D00D47104 /* AppIntent.swift in Sources */,
+				21FE09A12BF4C52C00D47104 /* String+Date.swift in Sources */,
 				21FE09842BF4BC7B00D47104 /* GutHubWidgetApp.swift in Sources */,
 				21FE099C2BF4BFC500D47104 /* Extension+Color.swift in Sources */,
 				21FE09A32BF4C5F000D47104 /* GitHubParser.swift in Sources */,
@@ -206,7 +321,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		21FE09A62BF634B100D47104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FE09C12BF634F700D47104 /* DevelopmentDay.swift in Sources */,
+				21FE09B42BF634B100D47104 /* GitHub_Widget.swift in Sources */,
+				21FE09B22BF634B100D47104 /* GitHub_WidgetBundle.swift in Sources */,
+				21FE09C22BF6351C00D47104 /* String+Date.swift in Sources */,
+				21FE09C32BF6351C00D47104 /* Extension+Color.swift in Sources */,
+				21FE09CA2BF6396D00D47104 /* AppIntent.swift in Sources */,
+				21FE09C42BF6351C00D47104 /* GitHubParser.swift in Sources */,
+				21FE09C52BF6352C00D47104 /* ContributionsGraphView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21FE09BB2BF634B300D47104 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21FE09A92BF634B100D47104 /* GitHub WidgetExtension */;
+			targetProxy = 21FE09BA2BF634B300D47104 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		21FE098C2BF4BC7D00D47104 /* Debug */ = {
@@ -331,6 +469,7 @@
 		21FE098F2BF4BC7D00D47104 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -365,6 +504,7 @@
 		21FE09902BF4BC7D00D47104 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +536,62 @@
 			};
 			name = Release;
 		};
+		21FE09BE2BF634B300D47104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4524FJSV52;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GitHub Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "GitHub Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.pashkov.GutHubWidget.GitHub-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21FE09BF2BF634B300D47104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4524FJSV52;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GitHub Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "GitHub Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.pashkov.GutHubWidget.GitHub-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -417,6 +613,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		21FE09BD2BF634B300D47104 /* Build configuration list for PBXNativeTarget "GitHub WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21FE09BE2BF634B300D47104 /* Debug */,
+				21FE09BF2BF634B300D47104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -432,6 +637,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		21FE09922BF4BD0F00D47104 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21FE09912BF4BD0F00D47104 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		21FE09C62BF638B300D47104 /* SwiftSoup */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 21FE09912BF4BD0F00D47104 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
 			productName = SwiftSoup;

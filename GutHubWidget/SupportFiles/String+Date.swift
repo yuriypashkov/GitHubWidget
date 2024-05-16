@@ -15,3 +15,12 @@ extension Date {
         return formatter.string(from: self)
     }
 }
+
+extension String {
+    func toDate(string: String) -> Date? {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        formatter.locale = Calendar.current.locale
+        return formatter.date(from: self)
+    }
+}

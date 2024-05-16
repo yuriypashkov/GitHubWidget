@@ -19,7 +19,9 @@ class ContributionsViewModel: ObservableObject {
     
     private func parse() {
         GitHubParser.getDevelopmentDays(username: "yuriypashkov") { [weak self] days in
-            self?.days = days
+            DispatchQueue.main.async {
+                self?.days = days
+            }
         }
     }
 }

@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContributionsGraphView: View {
     
-    static let boxSize: CGFloat = 15
-    static let spacing: CGFloat = 4
+    private static let boxSize: CGFloat = 16
+    private static let spacing: CGFloat = 4
     
     private let rows = Array(repeating: GridItem(.fixed(boxSize), spacing: spacing), count: 7)
     
@@ -18,19 +18,29 @@ struct ContributionsGraphView: View {
     let selectedDay: (DevelopmentDay) -> Void
     
     var body: some View {
-        LazyHGrid(rows: rows, spacing: Self.spacing) {
-            ForEach(days, id:\.date) { day in
-                Color.getGutHubColor(level: day.dataLevel)
-                    .frame(width: Self.boxSize, height: Self.boxSize, alignment: .center)
-                    .clipShape(.rect(cornerRadius: 3))
-                    .onTapGesture {
-                        selectedDay(day)
-                    }
+        HStack {
+            VStack(spacing: 3) {
+                let weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Mon", "Sat"]
+                ForEach(weekDays, id:\.self) { day in
+                    Text(day)
+                        .font(.system(size: 14))
+                }
+            }
+            LazyHGrid(rows: rows, spacing: Self.spacing) {
+                ForEach(days) { day in
+                    RoundedRectangle(cornerRadius: 3)
+                        .frame(width: Self.boxSize, height: Self.boxSize)
+                        .foregroundStyle(Color.getGutHubColor(level: day.dataLevel))
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 3)
+                                .stroke(Color(.gray).opacity(0.2), lineWidth: day.dataLevel == 0 ? 1 : 0)
+                        }
+                        .onTapGesture {
+                            selectedDay(day)
+                        }
+                    
+                }
             }
         }
     }
 }
-
-//#Preview {
-//    ContributionsGraphView()
-//}
