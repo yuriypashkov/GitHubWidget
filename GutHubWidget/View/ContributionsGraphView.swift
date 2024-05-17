@@ -20,7 +20,7 @@ struct ContributionsGraphView: View {
     var body: some View {
         HStack {
             VStack(spacing: 3) {
-                let weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Mon", "Sat"]
+                let weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
                 ForEach(weekDays, id:\.self) { day in
                     Text(day)
                         .font(.system(size: 14))
